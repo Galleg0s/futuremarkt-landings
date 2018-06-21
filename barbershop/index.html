@@ -4,14 +4,14 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Барбершоп Бородинский</title>
-  <meta name="theme-color" content="">
+  <title>Barbershop</title>
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700" rel="stylesheet">
   <link rel="stylesheet" href="styles/slick.min.css">
   <link rel="stylesheet" href="styles/slick-theme.css">
   <link rel="stylesheet" href="styles/normalize.min.css">
   <link rel="stylesheet" href="styles/main.min.css">
+
 
   <!--[if lt IE 9]>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
@@ -27,9 +27,9 @@
     <div class="page-header__logo">
       <a href="#" class="page-header__link">
         <picture>
-          <source media="(min-width: 1200px)" srcset="/img/logotype-desktop.svg">
-          <source media="(min-width:768px)" srcset="/img/logotype-tablet.svg">
-          <img class="page-header__logo-image" src="/img/logotype-mobile.svg" alt="Барбершоп Бородинский" width="370" height="153">
+          <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
+          <source media="(min-width:768px)" srcset="img/logotype-tablet.svg">
+          <img class="page-header__logo-image" src="img/logotype-mobile.svg" alt="Барбершоп Бородинский" width="370" height="153">
         </picture>
       </a>
     </div>
@@ -139,7 +139,7 @@
           <ul class="reviews__list slider">
             <li class="reviews__item">
               <div class="reviews__img">
-                <img src="/img/travis.jpg" alt="Фото Трэвиса Баркера">
+                <img src="img/travis.jpg" alt="Фото Трэвиса Баркера">
               </div>
               <blockquote class="reviews-text">
                 <b>Трэвис Баркер</b>
@@ -148,7 +148,7 @@
             </li>
             <li class="reviews__item">
               <div class="reviews__img">
-                <img src="/img/travis.jpg" alt="Фото Трэвиса Баркера">
+                <img src="img/travis.jpg" alt="Фото Трэвиса Баркера">
               </div>
               <blockquote class="reviews-text">
                 <b>Трэвис Баркер</b>
@@ -157,7 +157,7 @@
             </li>
             <li class="reviews__item">
               <div class="reviews__img">
-                <img src="/img/travis.jpg" alt="Фото Трэвиса Баркера">
+                <img src="img/travis.jpg" alt="Фото Трэвиса Баркера">
               </div>
               <blockquote class="reviews-text">
                 <b>Трэвис Баркер</b>
@@ -210,7 +210,7 @@
         <input class="login-form__username" type="text" name="username" placeholder="Логин" minlength="3" maxlength="30" required>
       </div>
       <div class="login-form__password-wrap">
-        <input class="login-form__password" type="password" name="password" placeholder="Пароль" minlength="6" required>
+        <input class="login-form__password" type="text" name="password" placeholder="Пароль" minlength="6" maxlength="16" required>
       </div>
       <div class="login-form__container">
         <input class="login-form__remember" type="checkbox" name="remember" id="remember">
@@ -224,9 +224,9 @@
     </form>
   </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <script src="../js/slick.min.js"></script>
-  <script src="../js/slider.min.js"></script>
-  <script src="../js/main.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/slider.min.js"></script>
+  <script src="js/main.min.js"></script>
   <script>
     //advatrages-slider
     // function and variables, 'unslick' while window size reach maximum width (768px)
@@ -345,15 +345,15 @@
     var toggleButton = document.querySelector('.main-nav__toggle');
 
     nav.classList.remove('main-nav--nojs');
-    nav.classList.add('main-nav--closed');
+    nav.classList.add('main-nav--opened');
 
     toggleButton.addEventListener('click', function(){
-      if (nav.classList.contains('main-nav--closed')) {
-        nav.classList.remove('main-nav--closed');
-        nav.classList.add('main-nav--opened');
-      } else {
+      if (nav.classList.contains('main-nav--opened')) {
         nav.classList.remove('main-nav--opened');
         nav.classList.add('main-nav--closed');
+      } else {
+        nav.classList.remove('main-nav--closed');
+        nav.classList.add('main-nav--opened');
       }
     })
   </script>
