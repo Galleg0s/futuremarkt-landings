@@ -1,6 +1,6 @@
 const puzzleEl = document.querySelector('#puzzle')
 const guessesEl = document.querySelector('#guesses')
-let game1
+let game1;
 
 window.addEventListener('keypress', (e) => {
     const guess = String.fromCharCode(e.charCode);
