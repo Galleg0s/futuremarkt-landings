@@ -1,0 +1,45 @@
+.svg-arrow {
+	background: url("sprite.svg") 0 0 no-repeat;
+}
+
+.svg-arrow-dims {
+	width: 32px;
+	height: 32px;
+}
+
+.svg-basket {
+	background: url("sprite.svg") 25% 0 no-repeat;
+}
+
+.svg-basket-dims {
+	width: 32px;
+	height: 32px;
+}
+
+.svg-battery {
+	background: url("sprite.svg") 50% 0 no-repeat;
+}
+
+.svg-battery-dims {
+	width: 32px;
+	height: 32px;
+}
+
+.svg-chart {
+	background: url("sprite.svg") 75% 0 no-repeat;
+}
+
+.svg-chart-dims {
+	width: 32px;
+	height: 32px;
+}
+
+.svg-login {
+	background: url("sprite.svg") 100% 0 no-repeat;
+}
+
+.svg-login-dims {
+	width: 32px;
+	height: 32px;
+}
+

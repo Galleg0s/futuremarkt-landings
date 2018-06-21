@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="343" height="230" viewBox="0 0 343 230">
+    <g fill="none" data-name="-e-yd-circle">
+        <mask id="b" width="1152" height="380" x="-525" y="-150" maskUnits="userSpaceOnUse">
+            <g data-name="bg" transform="translate(-525 -150)">
+                <rect width="1152" height="380" fill="#C4C4C4" rx="6"/>
+                <rect width="1152" height="380" fill="url(#a)" rx="6"/>
+            </g>
+        </mask>
+        <g mask="url(#b)">
+            <path fill="#8E00F2" fill-rule="evenodd" d="M171.5 343c94.717 0 171.5-76.783 171.5-171.5S266.217 0 171.5 0 0 76.783 0 171.5 76.783 343 171.5 343zm0-69.35c56.416 0 102.15-45.734 102.15-102.15 0-56.416-45.734-102.15-102.15-102.15-56.416 0-102.15 45.734-102.15 102.15 0 56.416 45.734 102.15 102.15 102.15z" clip-rule="evenodd" data-name="Subtract"/>
+        </g>
+    </g>
+    <defs>
+        <linearGradient id="a" x2="1" gradientTransform="matrix(0 380 -480 0 1057 0)" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#8E00F2"/>
+            <stop offset="1" stop-color="#6433EE"/>
+        </linearGradient>
+    </defs>
+</svg>

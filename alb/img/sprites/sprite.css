@@ -1,0 +1,36 @@
+.svg-factory-icon {
+	background: url("sprite.svg") 0 0 no-repeat;
+}
+
+.svg-factory-icon-dims {
+	width: 19px;
+	height: 18px;
+}
+
+.svg-ok-icon {
+	background: url("sprite.svg") 33.333333333333336% 0 no-repeat;
+}
+
+.svg-ok-icon-dims {
+	width: 19px;
+	height: 18px;
+}
+
+.svg-repair-icon {
+	background: url("sprite.svg") 66.66666666666667% 0 no-repeat;
+}
+
+.svg-repair-icon-dims {
+	width: 19px;
+	height: 18px;
+}
+
+.svg-star-icon {
+	background: url("sprite.svg") 100% 0 no-repeat;
+}
+
+.svg-star-icon-dims {
+	width: 19px;
+	height: 18px;
+}
+

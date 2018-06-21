@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Мороженицы Lumi</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Мороженицы Lumi">
+  <meta name="keywords" content="">
+  <link rel="icon" type="image/png" href="assets/img/favicons/favicon.ico">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/style.min.css">
+</head>
+
+<body>
+  <header class="page-header">
+    <div class="page-header__heading header container">
+      <div class="header__logo">
+        <a href="#" class="header__logo-link">
+            <img class="header__logo-image" src="assets/img/images/logo.png" alt="Логотип компании Lumi">
+            <p>Фабрика замороженных технологий</p>
+          </a>
+      </div>
+      <div class="header__contacts contacts">
+        <a class="contacts__tel" href="tel:+78003020328"><span>8 800 302 03 28</span></a>
+        <a class="contacts__text link" href="#">
+          <p>Заказать обратный звонок</p>
+        </a>
+      </div>
+    </div>
+    <section class="page-header__presentation presentation container">
+      <div class="presentation__slider presentation-slider">
+        <div class="carousel pres-carousel" id="prescarouselbottom">
+          <div class="cloud9-item">
+            <img src="assets/img/images/1.png" alt="Мороженица Lumi mini">
+            <p class="carousel__text">Lumi mini</p>
+            <p class="carousel__text carousel__price">3500 <span>руб.</span></p>
+          </div>
+          <div class="cloud9-item">
+            <img src="assets/img/images/2.png" alt="Мороженица Lumi ice cream">
+            <p class="carousel__text">Lumi ice cream</p>
+            <p class="carousel__text carousel__price">6500 <span>руб.</span></p>
+          </div>
+          <div class="cloud9-item">
+            <img src="assets/img/images/3.png" alt="Мороженица Lumi d-100">
+            <p class="carousel__text">Lumi d-100</p>
+            <p class="carousel__text carousel__price">12000 <span>руб.</span></p>
+          </div>
+        </div>
+        <div class="pres-buttons">
+          <button class="prev-button" type="button" title="Назад">
+            <i class="fa fa-chevron-left" aria-hidden="true"></i>
+          </button>
+          <button class="next-button" type="button" title="Вперёд">
+            <i class="fa fa-chevron-right" aria-hidden="true"></i>
+          </button>
+        </div>
+        <div class="pres-dots">
+          <ul>
+            <li class="carousel__dot_active"></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </div>
+      </div>
+      <div class="presentation__inner-wrap">
+        <div class="presentation__advantages advantages">
+          <h1 class="advantages__title">Полуавтоматические мороженицы</h1>
+          <ul class="advantages__list">
+            <li class="advantages__item">
+              <p>Доставка по РФ</p>
+            </li>
+            <li class="advantages__item">
+              <p>Без предоплаты</p>
+            </li>
+            <li class="advantages__item">
+              <p>До 1,5 литра десерта</p>
+            </li>
+            <li class="advantages__item">
+              <p>Приготовление мороженого от 20 мин.</p>
+            </li>
+          </ul>
+        </div>
+        <div class="presentation__modal modal-popup">
+          <div class="modal-popup__wrap">
+            <p class="presentation__modal-desk modal-popup__promo">Оставь заявку сегодня и<br> <b>получи в подарок 1 пачку смеси</b> домашнего замороженного йогурта Lumi в подарок</p>
+            <div class="timer">
+              <span id="days"></span>
+              <span>:</span>
+              <span id="hours"></span>
+              <span>:</span>
+              <span id="minutes"></span>
+              <span>:</span>
+              <span id="seconds"></span>
+            </div>
+            <form class="presentation-modal__form modal-form" action="#" method="post">
+              <div class="modal-form__username">
+                <input name="name" type="text" placeholder="Ваше имя:">
+              </div>
+              <div class="modal-form__tel">
+                <input name="phone" type="tel" placeholder="Ваш телефон:">
+              </div>
+              <button class="modal-form__btn btn" type="submit">Купить мороженицу</button>
+            </form>
+          </div>
+        </div>
+        <img class="presentation__picture" src="assets/img/images/gift.png" alt="Lumi смесь клубника">
+      </div>
+    </section>
+  </header>
+  <main class="index-content">
+    <section class="features">
+      <h2>Выберите свою мороженицу</h2>
+
+      <ul class="features__list nav nav-tabs" id="myTab" role="tablist">
+        <li class="features__item product nav-item">
+          <div class="nav-link active" id="home-tab" data-toggle="tab" data-target="#home" role="tab" aria-controls="home" aria-selected="true">
+            <div class="product__increase">
+                <a href="" data-fancybox="gallery" href="assets/img/images/1.jpg">
+                  <i class="fa fa-search-plus" aria-hidden="true"></i>
+                  <!-- <img class="presentation__picture" src="assets/img/images/1.png" alt="Изображение мороженицы"> -->
+                </a>
+              </button>
+            <div class="product__wrap">
+              <div class="product__image-wrap">
+                <img class="product__image" src="assets/img/images/1.png" alt="Мороженица Lumi mini">
+              </div>
+              <p class="product__title">Мороженица Lumi mini</p>
+              <div class="product__properties">
+                <span class="product__size">800 мл</span>
+                <span class="product__time">30-40 минут</span>
+              </div>
+              <b class="product__price">3500 руб.</b>
+            </div>
+            <button id="productButton1" class="product__button btn" type="button">Купить мороженицу</button>
+          </div>
+        </li>
+        <li class="features__item product nav-item">
+          <div class="nav-link" id="profile-tab" data-toggle="tab" data-target="#profile" role="tab" aria-controls="profile" aria-selected="false">
+            <span class="hit"></span>
+            <div class="product__increase">
+                <a href="" data-fancybox="gallery" href="assets/img/images/2.jpg">
+                  <i class="fa fa-search-plus" aria-hidden="true"></i>
+                </a>
+              </div>
+            <div class="product__wrap">
+              <div class="product__image-wrap">
+                <img class="product__image" src="assets/img/images/2.png" alt="Мороженица Lumi ice cream">
+              </div>
+              <p class="product__title">Мороженица Lumi ice cream</p>
+              <div class="product__properties">
+                <span class="product__size">1 литр</span>
+                <span class="product__time">20-30 минут</span>
+              </div>
+              <b class="product__price">6500 руб.</b>
+            </div>
+            <button id="productButton2" class="product__button btn" type="button">Купить мороженицу</button>
+          </div>
+        </li>
+        <li class="features__item product nav-item">
+          <div class="nav-link" id="contact-tab" data-toggle="tab" data-target="#contact" role="tab" aria-controls="contact" aria-selected="false">
+            <div class="product__increase">
+                <a href="" data-fancybox="gallery" href="assets/img/images/3.jpg">
+                  <i class="fa fa-search-plus" aria-hidden="true"></i>
+                </a>
+              </div>
+            <div class="product__wrap">
+              <div class="product__image-wrap">
+                <img class="product__image" src="assets/img/images/3.png" alt="Мороженица Lumi d-100">
+              </div>
+              <p class="product__title">Мороженица Lumi d-100</p>
+              <div class="product__properties">
+                <span class="product__size">1,5 литр</span>
+                <span class="product__time">20-30 минут</span>
+              </div>
+              <b class="product__price">12000 руб.</b>
+            </div>
+            <button id="productButton3" class="product__button btn" type="button">Купить мороженицу</button>
+          </div>
+        </li>
+      </ul>
+
+
+      <div class="tab-content" id="myTabContent">
+
+        <div class="features__inner-wrap tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+          <div class="features__desk description">
+            <h3 class="description__title">Характеристики мороженицы Lumi mini</h3>
+            <ul class="description__list">
+              <li>
+                <p><span>1.</span>Экономичный вариант для домашнего использования</p>
+              </li>
+              <li>
+                <p><span>2.</span>Полуавтоматическая</p>
+              </li>
+              <li>
+                <p><span>3.</span>Ёмкость на 800мл., что достаточно для приготовления 400-500гр. Мороженного или замороженного йогурта</p>
+              </li>
+              <li>
+                <p><span>4.</span>Время приготовления 30-40 мин.</p>
+              </li>
+            </ul>
+            <p class="description__text">
+              Этот вариант для тех кто не часто, но все же любит заморозить свои печали или просто насладиться вкусным десертом. Прочная, красивая и удобная полуавтоматическая (без системы охлаждения) мороженица <b>Lumi mini</b> станет верным
+              помощником в этом деле. Внутренняя сторона контейнера выполнена из нержавеющей стали и не подвергается царапанию. На приготовления замороженного лакомства уйдёт примерно 40-50 минут. Также мы рекомендуем заказывать смесь для приготовления
+              домашнего йогуртового мороженного Lumi, вместе с мороженицей.
+            </p>
+            <p class="description__text"><b>Комплектация:</b> мороженица, инструкция на русском языке, рецепты<br>
+              <b>Питание:</b> 230В/50гц <br><b>Мощность двигателя:</b> 15 Вт</p>
+          </div>
+          <div id="featuresModal1" class="features__modal modal-popup">
+            <div class="modal-popup__wrap">
+              <p class="features__modal-desk modal-popup__desk">Закажите Lumi mini за
+                <b class="features__price">3500</b> рублей
+              </p>
+              <form class="features-modal__form modal-form" action="#" method="post">
+                <div class="modal-form__username">
+                  <input id="features-modal__name" type="text" name="name" placeholder="Ваше имя">
+                  <label for="features-modal__name">Ваше имя</label>
+                </div>
+                <div class="modal-form__tel">
+                  <input id="features-modal__phone" name="phone" type="tel" placeholder="Ваш телефон">
+                  <label for="features-modal__phone">Ваш телефон</label>
+                </div>
+                <button class="modal-form__btn btn" type="submit">Купить мороженицу</button>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <div class="features__inner-wrap tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+          <div class="features__desk description">
+            <h3 class="description__title">Характеристики мороженицы Lumi ice cream</h3>
+            <ul class="description__list">
+              <li>
+                <p><span>1.</span>Стильный дизайн, который прекрасно впишется в интерьер любой кухни</p>
+              </li>
+              <li>
+
+                <p><span>2.</span>Чаша полуавтоматическая на 1л. (750-850гр. Готового мороженного или замороженного йогурта)</p>
+              </li>
+              <li>
+
+                <p><span>3.</span>Внутренние покрытие чаши нержавеющая сталь</p>
+              </li>
+              <li>
+
+                <p><span>4.</span>Приготовление 20-30 минут</p>
+              </li>
+            </ul>
+            <p class="description__text">
+              <b>Серия морожениц Lumi bl-1000</b> – прекрасное сочетание цены и качества. Мороженицы представлены в различных цветовых гаммах. Это мороженица для семьи которые любят различные замороженные десерты, сорбеты и что сейчас актуально правильное
+              питание в виде замороженного йогурта. Lumi bl-1000 это полуавтоматические мороженица, с чашей на 4-5 порций готового лакомства и поддержанием температуры в чаше для сохранения продукта после приготовления.
+            </p>
+            <p class="description__text"><b>Комплектация:</b> мороженица, инструкция на русском языке, рецепты</p>
+          </div>
+          <div id="featuresModal2" class="features__modal modal-popup">
+            <div class="modal-popup__wrap">
+              <p class="features__modal-desk modal-popup__desk">Закажите Lumi ice cream за
+                <b class="features__price">6500</b> рублей
+              </p>
+              <form class="features-modal__form modal-form" action="#" method="post">
+                <div class="modal-form__username">
+                  <input type="text" name="name" placeholder="Ваше имя">
+                </div>
+                <div class="modal-form__tel">
+                  <input name="phone" type="tel" placeholder="Ваш телефон">
+                </div>
+                <button class="modal-form__btn btn" type="submit">Купить мороженицу</button>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <div class="features__inner-wrap tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+          <div class="features__desk description">
+            <h3 class="description__title">Характеристики мороженицы Lumi d-100<br> 1,5L Хром</h3>
+            <ul class="description__list">
+              <li>
+                <p><span>1.</span>Премиальная модель среди полуавтоматических морожениц</p>
+              </li>
+              <li>
+                <p><span>2.</span>Стильный и эффектный дизайн чаши</p>
+              </li>
+              <li>
+                <p><span>3.</span>Внутреннее покрытие – отполированная до зеркального блеска нержавейка </p>
+              </li>
+
+            </ul>
+            <p class="description__text">
+              <b>Dolce Vita Chrome 1,5л</b> – элегантная и стильная мороженица, которая подходит для приготовления любого типа мороженого. Аппарат прост в использовании и очистке. Контейнер для заморозки с двойными герметично закрытыми стенками, внутренняя
+              сторона выполнена из нержавеющей стали INOX, что значительно увеличивает его прочность и срок службы. Внутренняя поверхность отполирована до зеркального блеска. Всего за 20-30 минут вы сможете быстро и легко приготовить мороженое для всей
+              семьи!
+            </p>
+            <p class="description__text"><b>Комплектация:</b> мороженица, инструкция на русском языке, рецепты</p>
+          </div>
+          <div id="featuresModal3" class="features__modal modal-popup">
+            <div class="modal-popup__wrap">
+              <p class="features__modal-desk modal-popup__desk">Закажите Lumi d-100 за
+                <b class="features__price">12000</b> рублей
+              </p>
+              <form class="features-modal__form modal-form" action="#" method="post">
+                <div class="modal-form__username">
+                  <input type="text" name="name" placeholder="Ваше имя">
+                </div>
+                <div class="modal-form__tel">
+                  <input name="phone" type="tel" placeholder="Ваш телефон">
+                </div>
+                <button class="modal-form__btn btn" type="submit">Купить мороженицу</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="calculation">
+      <div class="calculation__outer-wrap">
+        <div class="calculation__inner-wrap">
+          <h3 class="calculation__title">Купите свою смесь для мороженицы</h3>
+          <p class="calculation__promo">Одна пачка Бесплатно!</p>
+          <ul class="advantages__list advantages__list--calculation">
+            <li class="advantages__item">
+              <p>Доставка по РФ</p>
+            </li>
+            <li class="advantages__item">
+              <p>Без предоплаты</p>
+            </li>
+            <li class="advantages__item">
+              <p>До 1,5 литра десерта</p>
+            </li>
+            <li class="advantages__item">
+              <p>Приготовление мороженого от 20 мин.</p>
+            </li>
+          </ul>
+          <p class="calculation__text">Выберите количество смеси</p>
+          <p class="calculation__text">&#171;<span id="mixname">Клубника</span>&#187;</p>
+          <form class="calculation__form form-calculation" method="post">
+            <div class="form-calculation__numbers">
+              <span id="quantity">0</span>
+              <span>4</span>
+              <span>8</span>
+              <span>12</span>
+            </div>
+
+            <div class="form-calculation__range" id="rangeslider">
+            </div>
+            <div class="form-calculation__count">
+              <p>
+                <input type="text" id="amount" readonly>
+              </p>
+              <span>x</span>
+              <span id="price">140 руб</span>
+              <span class="form-calculation__free"></span>
+            </div>
+
+            <div class="form-calculation__total-wrap">
+              <p class="form-calculation__total">Итого: <b id="total">0</b> <b>руб</b>
+              </p>
+              <button class="form-calculation__button btn form-calculation__button--white" id="openBasket" type="button">Купить смесь</button>
+            </div>
+
+          </form>
+        </div>
+        <div class="calculation__slider slider-calculation">
+          <div class="calculation__slider-wrap">
+            <div class="slider-calculation__item">
+              <img class="slider-calculation__image" src="assets/img/tastes/watermelon.png" alt="Lumi смесь Арбуз">
+              <span class="slider-calculation__name">Арбуз</span>
+            </div>
+            <div class="slider-calculation__item">
+              <img class="slider-calculation__image" src="assets/img/tastes/vanilla.png" alt="Lumi смесь Ваниль">
+              <span class="slider-calculation__name">Ваниль</span>
+            </div>
+            <div class="slider-calculation__item">
+              <img class="slider-calculation__image" src="assets/img/tastes/strawberry.png" alt="Lumi смесь Клубника">
+              <span class="slider-calculation__name">Клубника</span>
+            </div>
+            <div class="slider-calculation__item">
+              <img class="slider-calculation__image" src="assets/img/tastes/mango.png" alt="Lumi смесь Манго">
+              <span class="slider-calculation__name">Манго</span>
+            </div>
+            <div class="slider-calculation__item">
+              <img class="slider-calculation__image" src="assets/img/tastes/chocolate.png" alt="Lumi смесь Шоколад">
+              <span class="slider-calculation__name">Шоколад</span>
+            </div>
+            <div class="slider-calculation__item">
+              <img class="slider-calculation__image" src="assets/img/tastes/bubblegum.png" alt="Lumi смесь Бабл Гам">
+              <span class="slider-calculation__name">Бабл Гам</span>
+            </div>
+            <div class="slider-calculation__item">
+              <img class="slider-calculation__image" src="assets/img/tastes/berries.png" alt="Lumi смесь Лесные Ягоды">
+              <span class="slider-calculation__name">Лесные Ягоды</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="about container">
+      <h2 class="about-title">О компании Lumi</h2>
+
+      <div class="about-desk">
+        <p><b>Lumi</b> – это натуральный замороженный йогурт с фруктовым топпингом. Впервые йогурты Lumi были представлены в Нижнем Новгороде в 2016 году, и сразу же понравились любителям всего нового, необычного и вкусного.</p>
+        <p>В Европе замороженный йогурт уже давно в тренде, сейчас лакомство можно попробовать и в России. Нежная сладость в дуэте с йогуртовой кислинкой, плотный сливочный вкус – это удовольствие оценят все. Если вы хотите приятно удивить себя, своих близких
+          и друзей – <b>зайдите за нежным морозным йогуртом Lumi в торговый центр Небо!</b></p>
+      </div>
+
+      <img class="about__image" src="assets/img/images/big-1000-x.png" alt="Логотип компании Lumi">
+    </section>
+    <section class="reviews">
+      <div class="reviews__wrap">
+        <h2 class="reviews__title">Отзывы наших клиентов</h2>
+        <div class="reviews__slider">
+          <div class="reviews__card slider__item">
+            <div class="reviews__heading">
+              <img src="assets/img/review-images/1.png" alt="Фотография автора отзыва">
+              <b>Николай Ильяхов</b>
+              <time datetime="2018-02-21">21 февраля</time>
+            </div>
+            <blockquote class="reviews__text">Заказал мороженицу, доставка быстрая. Упакована идеально, коробка целая без повреждений. Товар в идеальном состоянии. Скоро будем тестировать и угощать друзей.</blockquote>
+            <div class="reviews__images">
+              <a href="" data-fancybox="gallery" href="assets/img/review-images/photo-2.jpg">
+                <img src="assets/img/review-images/photo-2min.jpg"  alt="Фотография автора отзыва">
+              </a>
+            </div>
+          </div>
+          <div class="reviews__card slider__item">
+            <div class="reviews__heading">
+              <img src="assets/img/review-images/2.png" alt="Фотография автора отзыва">
+              <b>Светлана Захарова</b>
+              <time datetime="2018-02-21">21 февраля</time>
+            </div>
+            <blockquote class="reviews__text">Очень довольна заказом, доставка быстрая, цены приемлемые. В комплекте была книга с рецептами, да еще и пакет смеси для йогуртового мороженного положили в подарок. </blockquote>
+            <div class="reviews__images">
+              <a href="" data-fancybox="gallery" href="assets/img/review-images/photo-1.jpg">
+                <img src="assets/img/review-images/photo-1min.jpg"  alt="Фотография автора отзыва">
+              </a>
+            </div>
+          </div>
+          <div class="reviews__card slider__item">
+            <div class="reviews__heading">
+              <img src="assets/img/review-images/3.png" alt="Фотография автора отзыва">
+              <b>Анна Горохова</b>
+              <time datetime="2018-02-21">21 февраля</time>
+            </div>
+            <blockquote class="reviews__text">Дома часто собираются друзья и родственники с детьми. Решили с мужем купить мороженицу, долго искали сайт, сравнивали цены и доп. Бонусы к заказу. Нашли оптимальный вариант. Заказали, все пришло довольно быстро и в полном комплекте. Скоро
+              будем делать первые десертики. </blockquote>
+            <div class="reviews__images">
+              <img src="#" alt="">
+              <img src="#" alt="">
+              <img src="#" alt="">
+              <img src="#" alt="">
+            </div>
+          </div>
+          <div class="reviews__card slider__item">
+            <div class="reviews__heading">
+              <img src="assets/img/review-images/4.png" alt="Фотография автора отзыва">
+              <b>Пётр Демченко</b>
+              <time datetime="2018-02-21">21 февраля</time>
+            </div>
+            <blockquote class="reviews__text">Доставка быстрая, есть инструкция на русском, книга рецептов. Удобная, стильная и компактная. Можно еще и напитки быстро охлаждать. </blockquote>
+            <div class="reviews__images">
+              <a href="" data-fancybox="gallery" href="assets/img/review-images/photo-3.jpg">
+                <img src="assets/img/review-images/photo-3min.jpg" alt="Фотография автора отзыва">
+              </a>
+            </div>
+          </div>
+          <div class="reviews__card slider__item">
+            <div class="reviews__heading">
+              <img src="assets/img/review-images/5.png" alt="Фотография автора отзыва">
+              <b>Никита Образумов</b>
+              <time datetime="2018-02-21">21 февраля</time>
+            </div>
+            <blockquote class="reviews__text"> Заказал в подарок дочке, уж очень любит мороженное и замороженный йогурт. Она в восторге , теперь каждый вечер радует всю семью вкусными десертами. </blockquote>
+            <div class="reviews__images">
+              <img src="#" alt="">
+              <img src="#" alt="">
+              <img src="#" alt="">
+              <img src="#" alt="">
+            </div>
+          </div>
+          <div class="reviews__card slider__item">
+            <div class="reviews__heading">
+              <img src="assets/img/review-images/6.png" alt="Фотография автора отзыва">
+              <b>Дмитрий Соколов</b>
+              <time datetime="2018-02-21">21 февраля</time>
+            </div>
+            <blockquote class="reviews__text">Заказали мороженицу, пока все работает идеально, периодически заказываем смесь для замороженного йогурта, разные вкусы, всегда все в наличии. </blockquote>
+            <div class="reviews__images">
+              <a href="" data-fancybox="gallery" href="assets/img/review-images/photo-4.jpg">
+                <img src="assets/img/review-images/photo-4min.jpg" alt="Фотография автора отзыва">
+              </a>
+            </div>
+          </div>
+          <div class="reviews__card slider__item">
+            <div class="reviews__heading">
+              <img src="assets/img/review-images/7.png" alt="Фотография автора отзыва">
+              <b>Оксана Сахно</b>
+              <time datetime="2018-02-21">21 февраля</time>
+            </div>
+            <blockquote class="reviews__text"> Дети попробовали замороженный йогурт в Тц у нас в городе, очень понравилось. Думала как сделать дома, нашла сайт. Заказали, дети в восторге. </blockquote>
+            <div class="reviews__images">
+              <a href="" data-fancybox="gallery" href="assets/img/review-images/photo-5.jpg">
+                <img src="assets/img/review-images/photo-5min.jpg" alt="Фотография автора отзыва">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="presentation--bottom">
+      <div class="presentation container">
+        <div class="presentation__slider presentation-slider">
+          <div class="carousel pres-carousel" id="prescarouseltop">
+            <div class="cloud9-item">
+              <img src="assets/img/images/1.png" alt="Мороженица Lumi mini">
+              <p class="carousel__text">Мороженица Lumi mini</p>
+              <p class="carousel__text carousel__price">3500 <span>руб.</span></p>
+            </div>
+            <div class="cloud9-item">
+              <img src="assets/img/images/2.png" alt="Мороженица Lumi ice cream">
+              <p class="carousel__text">Lumi ice cream</p>
+              <p class="carousel__text carousel__price">6500 <span>руб.</span></p>
+            </div>
+            <div class="cloud9-item">
+              <img src="assets/img/images/3.png" alt="Мороженица Lumi d-100">
+              <p class="carousel__text">Lumi d-100</p>
+              <p class="carousel__text carousel__price">12000 <span>руб.</span></p>
+            </div>
+          </div>
+          <div class="pres-buttons">
+            <button class="prev-button" type="button" title="Назад">
+              <i class="fa fa-chevron-left" aria-hidden="true"></i>
+            </button>
+            <button class="next-button" type="button" title="Назад">
+              <i class="fa fa-chevron-right" aria-hidden="true"></i>
+            </button>
+          </div>
+          <div class="pres-dots carousel__dots">
+            <ul>
+              <li class="carousel__dot_active"></li>
+              <li></li>
+              <li></li>
+            </ul>
+          </div>
+        </div>
+        <div class="presentation__inner-wrap">
+          <div class="presentation__advantages advantages">
+            <h1 class="advantages__title">Полуавтоматические мороженицы</h1>
+            <ul class="advantages__list">
+              <li class="advantages__item">
+                <p>Доставка по РФ</p>
+              </li>
+              <li class="advantages__item">
+                <p>Без предоплаты</p>
+              </li>
+              <li class="advantages__item">
+                <p>До 1,5 литра десерта</p>
+              </li>
+              <li class="advantages__item">
+                <p>Приготовление мороженого от 20 мин.</p>
+              </li>
+            </ul>
+          </div>
+          <div class="presentation__modal modal-popup">
+            <div class="modal-popup__wrap">
+              <p class="presentation__modal-desk modal-popup__promo">Оставь заявку сегодня и<br> <b>получи в подарок 1 пачку смеси</b> домашнего замороженного йогурта Lumi в подарок</p>
+              <div class="timer">
+                <span id="days2"></span>
+                <span>:</span>
+                <span id="hours2"></span>
+                <span>:</span>
+                <span id="minutes2"></span>
+                <span>:</span>
+                <span id="seconds2"></span>
+              </div>
+              <form class="presentation-modal__form modal-form" action="#" method="post">
+                <div class="modal-form__username">
+                  <input type="text" name="name" placeholder="Ваше имя:">
+                </div>
+                <div class="modal-form__tel">
+                  <input name="phone" type="tel" placeholder="Ваш телефон:">
+                </div>
+                <button class="modal-form__btn btn" type="submit">Купить мороженицу</button>
+              </form>
+            </div>
+          </div>
+          <img class="presentation__picture" src="assets/img/images/gift.png" alt="Lumi смесь клубника">
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="page-footer container">
+    <a class="page-footer__privacy link" href="#">Политика конфиденциальности</a>
+    <div class="page-footer__copyright">
+      <a class="page-footer__logo" href="#"><img class="page-footer__logo-image" src="assets/img/images/logo.png" alt="Логотип компании Lumi"></a>
+      <p class="page-footer__text">Copyright © 2017 Lumi <br> Все права защищены.</p>
+    </div>
+    <div class="page-footer__contacts contacts">
+      <a class="contacts__tel" href="tel:+78003020328"><span>8 800 302 03 28</span></a>
+      <a class="contacts__text link" href="#">
+        <p>Заказать обратный звонок</p>
+      </a>
+    </div>
+  </footer>
+  <div id="wrap" class="modal-popup__outer-wrap">
+    <div id="modalWrap" class="modal-popup">
+      <div class="modal-popup__wrap">
+        <p class="presentation__modal-desk modal-popup__promo">
+          <b>Оставьте заявку,</b><br> и наш менеджер свяжется с вами </p>
+        <form class="presentation-modal__form modal-form" action="#" method="post">
+          <div class="modal-form__username">
+            <input name="name" type="text" placeholder="Ваше имя:">
+          </div>
+          <div class="modal-form__tel">
+            <input name="phone" type="tel" placeholder="Ваш телефон:">
+          </div>
+          <button class="modal-form__btn btn" type="submit">Купить мороженицу</button>
+        </form>
+        <button id="closePopup" class="presentation-modal__close" type="button">
+        <i class="fa fa-times" aria-hidden="true"></i>
+      </button>
+      </div>
+    </div>
+  </div>
+  <div id="calcWrap1" class="modal-popup__outer-wrap">
+    <div class="features__modal modal-popup">
+      <div class="modal-popup__wrap">
+        <p class="features__modal-desk modal-popup__desk first-popup">Закажите Lumi mini за
+          <b class="features__price">3500</b> рублей
+        </p>
+        <form class="features-modal__form modal-form" action="#" method="post">
+          <div class="modal-form__username">
+            <input type="text" name="name" placeholder="Ваше имя">
+          </div>
+          <div class="modal-form__tel">
+            <input name="phone" type="tel" placeholder="Ваш телефон">
+          </div>
+          <button class="modal-form__btn btn" type="submit">Купить мороженицу</button>
+        </form>
+        <button id="closeCalcPopup1" class="presentation-modal__close" type="button">
+          <i class="fa fa-times" aria-hidden="true"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div id="calcWrap2" class="modal-popup__outer-wrap">
+    <div class="features__modal modal-popup">
+      <div class="modal-popup__wrap">
+        <p class="features__modal-desk modal-popup__desk second-popup">Закажите Lumi ice cream за
+          <b class="features__price">6500</b> рублей
+        </p>
+        <form class="features-modal__form modal-form" action="#" method="post">
+          <div class="modal-form__username">
+            <input type="text" name="name" placeholder="Ваше имя">
+          </div>
+          <div class="modal-form__tel">
+            <input name="phone" type="tel" placeholder="Ваш телефон">
+          </div>
+          <button class="modal-form__btn btn" type="submit">Купить мороженицу</button>
+        </form>
+        <button id="closeCalcPopup2" class="presentation-modal__close" type="button">
+          <i class="fa fa-times" aria-hidden="true"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div id="calcWrap3" class="modal-popup__outer-wrap">
+    <div class="features__modal modal-popup">
+      <div class="modal-popup__wrap">
+        <p class="features__modal-desk modal-popup__desk third-popup">Закажите Lumi d-100 за
+          <b class="features__price">12000</b> рублей
+        </p>
+        <form class="features-modal__form modal-form" action="#" method="post">
+          <div class="modal-form__username">
+            <input type="text" name="name" placeholder="Ваше имя">
+          </div>
+          <div class="modal-form__tel">
+            <input name="phone" type="tel" placeholder="Ваш телефон">
+          </div>
+          <button class="modal-form__btn btn" type="submit">Купить мороженицу</button>
+        </form>
+        <button id="closeCalcPopup3" class="presentation-modal__close" type="button">
+          <i class="fa fa-times" aria-hidden="true"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div id="basket" class="basket">
+      <div class="modal-popup basket__list">
+          <h4 class="basket__heading">Ваш заказ:</h4>
+          <div class="basket__table">
+            <table>
+              <thead>
+                <tr>
+                  <th>Название:</th>
+                  <th>Количество:</th>
+                  <th>Стоимость:</th>
+                </tr>
+              </thead>
+              <tr class="basket__product">
+                <td class="basket__name">Название смеси</td>
+                <td class="basket__quantity">
+                  <button type="button" class="decrease">-</button>
+                  <span class="quantity" data-quantity="0"></span><span> шт</span>
+                  <button type="button" class="increase">+</button>
+                </td>
+                <td><span class="basket__price">0</span> руб</td>
+              </tr>
+              <tr class="basket__product">
+                <td class="basket__name">Название смеси</td>
+                <td class="basket__quantity">
+                  <button type="button" class="decrease">-</button>
+                  <span class="quantity" data-quantity="1"></span><span> шт</span>
+                  <button type="button" class="increase">+</button>
+                </td>
+                <td><span class="basket__price">0</span> руб</td>
+              </tr>
+              <tr class="basket__product">
+                <td class="basket__name">Название смеси</td>
+                <td class="basket__quantity">
+                  <button type="button" class="decrease">-</button>
+                  <span class="quantity" data-quantity="2"></span><span> шт</span>
+                  <button type="button" class="increase">+</button>
+                </td>
+                <td><span class="basket__price">0</span> руб</td>
+              </tr>
+              <tr class="basket__product">
+                <td class="basket__name">Название смеси</td>
+                <td class="basket__quantity">
+                  <button type="button" class="decrease">-</button>
+                  <span class="quantity" data-quantity="3"></span><span> шт</span>
+                  <button type="button" class="increase">+</button>
+                </td>
+                <td><span class="basket__price">0</span> руб</td>
+              </tr>
+              <tr class="basket__product">
+                <td class="basket__name">Название смеси</td>
+                <td class="basket__quantity">
+                  <button type="button" class="decrease">-</button>
+                  <span class="quantity" data-quantity="4"></span><span> шт</span>
+                  <button type="button" class="increase">+</button>
+                </td>
+                <td><span class="basket__price">0</span> руб</td>
+              </tr>
+              <tr class="basket__product">
+                <td class="basket__name">Название смеси</td>
+                <td class="basket__quantity">
+                  <button type="button" class="decrease">-</button>
+                  <span class="quantity" data-quantity="5"></span><span> шт</span>
+                  <button type="button" class="increase">+</button>
+                </td>
+                <td><span class="basket__price">0</span> руб</td>
+              </tr>
+              <tr class="basket__product">
+                <td class="basket__name">Название смеси</td>
+                <td class="basket__quantity">
+                  <button type="button" class="decrease">-</button>
+                  <span class="quantity" data-quantity="6"></span><span> шт</span>
+                  <button type="button" class="increase">+</button>
+                </td>
+                <td>
+                  <span class="basket__price">0</span> руб</td>
+              </tr>
+              <tr class="basket__product">
+                <td class="basket__total">Итого:</td>
+                <td class="basket__freemix" id="freemix"></td>
+                <td>
+                  <span id="totalCart">0</span>
+                  <span>руб.</span>
+                </td>
+              </tr>
+            </table>
+            <button class="modal-form__btn btn basket__btn" id="basketNext" type="button">Далее</button>
+          </div>
+          <button id="closeBasket" class="presentation-modal__close" type="button">
+            <i class="fa fa-times" aria-hidden="true"></i>
+          </button>
+      </div>
+      <div class="modal-popup basket__form">
+        <form action="#" method="post">
+          <p class="basket__desk">Оставьте заявку, и наш менеджер свяжется с вами в ближайшее время</p>
+          <div class="modal-form__username">
+            <input type="text" name="name" placeholder="Ваше имя">
+          </div>
+          <div class="modal-form__tel">
+            <input name="phone" type="tel" placeholder="Ваш телефон">
+          </div>
+          <button class="modal-form__btn btn basket__btn" type="submit">Заказать смеси</button>
+        </form>
+        <button id="closeBasketForm" class="presentation-modal__close" type="button">
+          <i class="fa fa-times" aria-hidden="true"></i>
+        </button>
+      </div>
+    </div>
+  <div id="gratitudeWrap" class="gratitude__wrap">
+    <div class="gratitude" id="gratitude">
+      <h1 class="gratitude__title">Спасибо за заказ,</h1>
+      <span class="gratitude__username">уважаемый клиент!</span>
+      <p class="gratitude__text">Менеджер свяжется с Вами
+      в ближайшее время.</p>
+      <button class="gratitude__btn btn">Отлично, жду звонка</button>
+      <span class="gratitude__smile">;)</span>
+      <button id="gratitudeClose" class="presentation-modal__close" type="button">
+        <i class="fa fa-times" aria-hidden="true"></i>
+      </button>
+    </div>
+  </div>
+
+<script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="//cdn.rawgit.com/specious/cloud9carousel/c25c4ccf/jquery.cloud9carousel.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+<script src="//code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/3.3.3/jquery.inputmask.bundle.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="//cdn.rawgit.com/aishek/jquery-animateNumber/52916cbb/jquery.animateNumber.min.js"></script>
+<script src="assets/js/scripts.min.js"></script>
+</body>
+</html>

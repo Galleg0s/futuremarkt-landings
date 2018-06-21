@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="63" height="69" viewBox="0 0 63 69">
+  <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c140 79.160451, 2017/05/06-01:08:21        ">
+   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+      <rdf:Description rdf:about=""/>
+   </rdf:RDF>
+</x:xmpmeta>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<?xpacket end="w"?></metadata>
+<defs>
+    <style>
+      .cls-1 {
+        fill: #0b1010;
+        fill-rule: evenodd;
+        filter: url(#filter);
+      }
+    </style>
+    <filter id="filter" x="54" y="2101" width="63" height="69" filterUnits="userSpaceOnUse">
+      <feOffset result="offset" dx="0.878" dy="8.09" in="SourceAlpha"/>
+      <feGaussianBlur result="blur" stdDeviation="4.243"/>
+      <feFlood result="flood" flood-color="#ffd200" flood-opacity="0.5"/>
+      <feComposite result="composite" operator="in" in2="blur"/>
+      <feBlend result="blend" in="SourceGraphic"/>
+      <feImage preserveAspectRatio="none" x="81.5" y="2118.25" width="27.5" height="33" result="image" xlink:href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMjcuNSIgaGVpZ2h0PSIzMyIgdmlld0JveD0iMCAwIDI3LjUgMzMiPgogIDxkZWZzPgogICAgPHN0eWxlPgogICAgICAuY2xzLTEgewogICAgICAgIGZpbGw6IHVybCgjbGluZWFyLWdyYWRpZW50KTsKICAgICAgfQogICAgPC9zdHlsZT4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0ibGluZWFyLWdyYWRpZW50IiB4MT0iMjcuNSIgeTE9IjcuOTA4IiB4Mj0iMCIgeTI9IjI1LjA5MiIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiPgogICAgICA8c3RvcCBvZmZzZXQ9Ii0wLjI1IiBzdG9wLWNvbG9yPSIjZmMwIi8+CiAgICAgIDxzdG9wIG9mZnNldD0iLTAuMjQyIiBzdG9wLWNvbG9yPSIjZmMwIi8+CiAgICAgIDxzdG9wIG9mZnNldD0iMS4yNSIgc3RvcC1jb2xvcj0iI2VkNWYwMCIvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICA8L2RlZnM+CiAgPHJlY3QgY2xhc3M9ImNscy0xIiB3aWR0aD0iMjcuNSIgaGVpZ2h0PSIzMyIvPgo8L3N2Zz4K"/>
+      <feComposite result="composite-2" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend-2" in2="blend"/>
+    </filter>
+  </defs>
+  <path id="Ellipse_4_copy_2" data-name="Ellipse 4 copy 2" class="cls-1" d="M85.255,2144.57a2.778,2.778,0,0,1,.408.3l0.163-.28a12.237,12.237,0,0,0,12.225-21.18l0.163-.28a2.14,2.14,0,0,1-.458-0.21,2.5,2.5,0,0,1,2.5-4.33,2.824,2.824,0,0,1,.408.3l0.012-.03A17.483,17.483,0,0,1,83.2,2149.13l0.013-.02a2.138,2.138,0,0,1-.458-0.21A2.5,2.5,0,0,1,85.255,2144.57Z" transform="translate(-54 -2101)"/>
+</svg>

@@ -1,0 +1,16 @@
+<svg width="340" height="340" viewBox="0 0 340 340" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>&#208;&#177;&#209;&#131;&#208;&#177;&#208;&#187;&#208;&#184;&#208;&#186;</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(892 667)">
+<g id="&#208;&#177;&#209;&#131;&#208;&#177;&#208;&#187;&#208;&#184;&#208;&#186;">
+<use xlink:href="#path0_fill" transform="translate(-892 -667)" fill="url(#paint0_linear)"/>
+</g>
+</g>
+<defs>
+<linearGradient id="paint0_linear" x1="0" y1="0" x2="1" y2="0" gradientUnits="userSpaceOnUse" gradientTransform="matrix(-271 232 -232 -271 415 184.5)">
+<stop offset="0" stop-color="#9222F0"/>
+<stop offset="1" stop-color="#9222F0"/>
+</linearGradient>
+<path id="path0_fill" fill-rule="evenodd" d="M 170 340C 263.888 340 340 263.888 340 170C 340 76.1116 263.888 0 170 0C 76.1116 0 0 76.1116 0 170C 0 263.888 76.1116 340 170 340ZM 170 269C 224.676 269 269 224.676 269 170C 269 115.324 224.676 71 170 71C 115.324 71 71 115.324 71 170C 71 224.676 115.324 269 170 269Z"/>
+</defs>
+</svg>
