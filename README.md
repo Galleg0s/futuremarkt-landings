@@ -1,2 +1,1 @@
-# galleg0s.github.io
-My projects
+# Landings for futuremarkt company
